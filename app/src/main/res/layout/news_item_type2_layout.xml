@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/title_text_format2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <ImageView
+            android:id="@+id/imageview_format_one"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="#89cecece"/>
+
+        <ImageView
+            android:id="@+id/imageview_format_two"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="#89cecece"/>
+
+        <ImageView
+            android:id="@+id/imageview_format_three"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="#89cecece"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/commenticon"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/icohome_commentsmall_v5"/>
+
+
+        <TextView
+            android:id="@+id/commentNum_format2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="15sp"
+
+            />
+
+        <ImageView
+            android:id="@+id/checknumber_image"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="60dp"
+            android:src="@drawable/icohome_picsmall_v5" />
+
+
+        <TextView
+            android:id="@+id/checknumber_format2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:textSize="15sp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/time_format2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="15sp"
+
+            />
+    </RelativeLayout>
+
+</LinearLayout>

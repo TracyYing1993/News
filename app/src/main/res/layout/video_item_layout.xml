@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="100dp">
+    <ImageView
+        android:id="@+id/video_img"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="#89cecece"/>
+    <TextView
+        android:id="@+id/video_title"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="title"
+        android:ellipsize="end"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="13dp"/>
+    <TextView
+        android:id="@+id/video_res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="来源"
+        android:textSize="12sp"
+        android:layout_below="@id/video_title"
+        android:layout_alignLeft="@id/video_title"
+        android:layout_marginTop="18dp"/>
+    <ImageView
+        android:id="@+id/video_small_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/video_play_d"
+        android:layout_toRightOf="@id/video_res"
+        android:layout_below="@id/video_title"
+        android:alpha="0.4"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="11dp"/>
+    <TextView
+        android:id="@+id/video_play_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="次数"
+        android:textSize="12sp"
+        android:layout_below="@id/video_title"
+        android:layout_toRightOf="@id/video_small_img"
+        android:layout_marginTop="18dp"
+        />
+
+</RelativeLayout>

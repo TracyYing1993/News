@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/title_format7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="this is title"
+        android:textColor="#000"
+        android:textSize="20sp"
+
+        />
+
+    <RelativeLayout
+        android:id="@+id/linear_bgpic"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" >
+
+        <ImageView
+            android:id="@+id/imageview_bgpic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:background="#89cecece"/>
+
+        <TextView
+            android:id="@+id/left_hostTeam_format7"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="sfsfsfsdfsdf"
+            android:textColor="#fff"
+            android:textSize="15sp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/right_visitorTeam_format7"
+            android:layout_toRightOf="@+id/left_hostTeam_format7"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/left_hostTeam_fenshu"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="34"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="vs"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/right_visitorTeam_fenshu"
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="78"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/right_visitorTeam_format7"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="shfdksdfsf"
+            android:textColor="#fff"
+
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/bottom_left_text_format7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="互动" />
+        <!--固定文字“互动直播”-->
+        <TextView
+            android:id="@+id/bottom_right_text_format7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+            android:text="直播" />
+
+    </RelativeLayout>
+
+</LinearLayout>

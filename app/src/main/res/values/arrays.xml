@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="news_tab_array">
+        <item>首页</item>
+        <item>娱乐</item>
+        <item>生活</item>
+        <item>科技</item>
+        <item>军事</item>
+        <item>文化</item>
+        <item>体育</item>
+        <item>汽车</item>
+        <item>微头条</item>
+        <item>社会</item>
+        <item>搞笑</item>
+        <item>教育</item>
+
+    </string-array>
+
+
+    <string-array name="video_tab_array">
+        <item>搞笑</item>
+        <item>娱乐八卦</item>
+        <item>脱口秀</item>
+        <item>网络剧</item>
+        <item>美女</item>
+        <item>游戏</item>
+        <item>健康养生</item>
+        <item>旅游</item>
+        <item>汽车</item>
+
+    </string-array>
+
+</resources>

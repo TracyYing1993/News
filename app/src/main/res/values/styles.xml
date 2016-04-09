@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="myradiobutton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <!--
+           android:button="@null"
+            android:gravity="center"
+            android:layout_weight="1"
+        -->
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!-- 白天 -->
+    <style name="ThemeDay">
+        <item name="bg_color">#ffffff</item>
+        <item name="text_color">#000000</item>
+        <item name="head_bg_color">@color/textColor</item>
+        <item name="home_tab_bg_color">@color/lightslategrey</item>
+    </style>
+
+    <!-- 夜间 -->
+    <style name="ThemeNight">
+        <item name="bg_color">#444143</item>
+        <item name="text_color">#000000</item>
+        <item name="head_bg_color">#444143</item>
+        <item name="home_tab_bg_color">#444143</item>
+    </style>
+</resources>

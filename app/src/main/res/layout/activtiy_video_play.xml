@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bg_color">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:elevation="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/video_img"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:background="@mipmap/video_palybefore_img"
+                android:scaleType="centerCrop" />
+
+            <TextureView
+                android:id="@+id/texttrueView"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:visibility="gone" />
+
+            <demo.newshui.com.org.widget.VideoLoadingCircle
+                android:id="@+id/video_loading_view"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_play"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:background="@mipmap/viedeo_btn_play" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cardview">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/text_webvideo_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="标题:"
+                android:textColor="@color/color30"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/text_webvideo_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_videotitle_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/text_webvideo_title"
+                android:layout_below="@+id/text_webvideo_title"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/text_webvideo_describe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/text_videotitle_content"
+                android:layout_below="@+id/text_videotitle_content"
+                android:layout_marginTop="10dp"
+                android:text="描述:"
+                android:textColor="@color/color30"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/text_video_describe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/text_webvideo_describe"
+                android:layout_below="@+id/text_webvideo_describe"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/text_webvideo_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/text_video_describe"
+                android:layout_below="@+id/text_video_describe"
+                android:layout_marginTop="10dp"
+                android:text="作者:"
+                android:textColor="@color/color30"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/text_video_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/text_webvideo_author"
+                android:layout_below="@+id/text_webvideo_author"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/text_webvideo_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/text_video_author"
+                android:layout_below="@+id/text_video_author"
+                android:layout_marginTop="10dp"
+                android:text="播放:" />
+
+            <TextView
+                android:id="@+id/text_video_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_video_author"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/text_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/text_webvideo_count"
+                android:layout_below="@+id/text_webvideo_count"
+                android:layout_marginTop="5dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/share_container_videoweb"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#89cecece"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_oneKeyShare_videoweb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickButton"
+            android:text="一键分享" />
+
+        <Button
+            android:id="@+id/btn_collect_videoweb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/btn_oneKeyShare_videoweb"
+            android:onClick="clickButton"
+            android:text="收藏" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionBtn_videoweb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="clickButton"
+            android:src="@mipmap/icotext_sharepress_v5"
+            app:backgroundTint="#6699ff"
+            app:elevation="10dp"
+            app:fabSize="normal"
+            app:rippleColor="#99000000" />
+    </RelativeLayout>
+
+</RelativeLayout>
